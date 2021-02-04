@@ -9,11 +9,11 @@
 ### About
 
 This repo provides minimum setup required for setting up single/multiple file upload in nodejs using cloudinary. <br><br>
-You can read blog version of it here
+You can read blog version of it on
+- <a href="https://www.gyaanibuddy.com/blog/how-to-upload-singlemultiple-image-to-cloudinary-using-nodejs/">Gyaanibuddy</a>
+- <a href="https://medium.com/@rugved-bongale/how-to-upload-single-multiple-image-to-cloudinary-in-node-js-ae9db9f4a0b9">Medium</a>
+
 <br>
-<a href="https://medium.com/@rugved-bongale/how-to-upload-single-multiple-image-to-cloudinary-in-node-js-ae9db9f4a0b9">
-  https://medium.com/@rugved-bongale/how-to-upload-single-multiple-image-to-cloudinary-in-node-js-ae9db9f4a0b9
-</a>.
 
 ------------------------------------------
 ### Installation
