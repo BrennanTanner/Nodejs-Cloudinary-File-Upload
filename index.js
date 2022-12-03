@@ -1,6 +1,6 @@
 var express = require('express')
 var multer  = require('multer')
-var port = 3000;
+const PORT = process.env.PORT || 3030;
 
 var app = express()
 
@@ -28,9 +28,9 @@ app.use('/uploads', express.static('uploads'));
 
 // cloudinary configuration
 cloudinary.config({
-  cloud_name: "YOUR_CLOUD_NAME",
-  api_key: "YOUR_API_NAME",
-  api_secret: "YOUR_API_SECRET"
+  cloud_name: process.env.CLOUD_NAME,
+  api_key: process.env.API_KEY,
+  api_secret: process.env.API_SECRET
 });
 
 async function uploadToCloudinary(locaFilePath) {
@@ -100,4 +100,6 @@ app.post('/profile-upload-multiple', upload.array('profile-files', 12), async (r
 })
    
 
-app.listen(port,() => console.log(`Server running on port ${port}!\nClick http://localhost:3000/`))
+app.listen(PORT, () => {
+  console.log(`Server Started at ${PORT}`)
+})
